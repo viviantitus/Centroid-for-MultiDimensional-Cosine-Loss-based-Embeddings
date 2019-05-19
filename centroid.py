@@ -4,9 +4,12 @@ import collections
 
 early_stop_var = collections.deque(maxlen=3)
 
+# Vectors can be n-dimensional 
 a = np.array([[4,3],[5,2],[2,5],[2,2]])
+# b is a random n-dimension vector for achieving centroid  
 b = np.array([2,2])
 
+# Gradient Descent for b-input to achieve centroid of a-vectors
 for i in range(20):
     
   avg_loss = 0
